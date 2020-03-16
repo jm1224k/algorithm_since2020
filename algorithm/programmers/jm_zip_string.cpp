@@ -11,7 +11,7 @@ int solution(string s) {
 	{
 		int ans = length;
 		int zip = 1;
-        string sub = s.substr(0, i);
+        	string sub = s.substr(0, i);
 
 		for (int j = i; j < length; j += i)
 		{
