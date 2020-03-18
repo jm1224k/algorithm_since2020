@@ -54,7 +54,7 @@ vector<int> solution(vector<string> genres, vector<int> plays)
 		else
 			answer.push_back(temp[0].second);
         
-    temp.clear();
+    		temp.clear();
 	}
 	return answer;
 }
