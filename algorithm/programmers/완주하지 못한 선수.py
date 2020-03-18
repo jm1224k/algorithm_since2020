@@ -8,9 +8,7 @@ def solution(participant, completion):
     while completion:
         a = participant.popleft()
         b = completion.popleft()
-        if a == b:
-            continue
-        else:
+        if a != b:
             return a
     return participant[-1]
 
