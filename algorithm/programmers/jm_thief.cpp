@@ -5,13 +5,13 @@
 using namespace std;
 
 int solution(vector<int> money) {
-    vector <int> first;
+	vector <int> first;
 	vector <int> second;
     
 	int len = money.size();
 	first.push_back(money[0]);
-    first.push_back(money[0]);
-    second.push_back(0);
+	first.push_back(money[0]);
+	second.push_back(0);
 	second.push_back(money[1]);
 	
 	for (int i = 2; i < len - 1; i++)
