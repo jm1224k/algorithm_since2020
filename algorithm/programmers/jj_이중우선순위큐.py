@@ -27,5 +27,5 @@ def solution(operations):
         answer = [-heapq.heappop(maxhq),heapq.heappop(minhq)]
     else:
         answer = [0,0]
-        
+
     return answer
