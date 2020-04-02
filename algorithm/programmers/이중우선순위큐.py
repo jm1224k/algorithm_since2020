@@ -6,7 +6,6 @@ def solution(operations):
     maxhq = []
 
     for operation in operations:
-
         if operation[0] == 'I':
             number = int(operation[2:])
             heapq.heappush(minhq,number)
@@ -17,10 +16,8 @@ def solution(operations):
             if cnt != 0:
                 if operation == 'D 1':
                     heapq.heappop(maxhq)
-
                 elif operation == 'D -1':
                     heapq.heappop(minhq)
-
                 cnt -= 1
             if cnt == 0:
                 maxhq = []
@@ -30,5 +27,5 @@ def solution(operations):
         answer = [-heapq.heappop(maxhq),heapq.heappop(minhq)]
     else:
         answer = [0,0]
-
+        
     return answer
