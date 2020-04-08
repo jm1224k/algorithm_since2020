@@ -19,14 +19,14 @@ void hanoi(int N, int start, int end, int via)
  
 int main(void)
 {
-	int n;
-	cin >> n;
+    int n;
+    cin >> n;
     
-	hanoi(n, 1, 3, 2);
+    hanoi(n, 1, 3, 2);
     
     printf("%d\n", v.size());
     for(int i = 0; i < v.size(); i++)
         printf("%d %d\n", v[i].first, v[i].second);
  
-	return 0;
+    return 0;
 }
