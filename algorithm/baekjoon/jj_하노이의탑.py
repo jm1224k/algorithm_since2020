@@ -1,13 +1,13 @@
-def hanoi(n,a,b,c):
+def hanoi(n,start,via,end):
     if n==1:
-        move.append([a,b,c])
+        move.append([start,end])
     else:
-        hanoi(n-1,a,c,b)
-        move.append([a,b,c])
-        hanoi(n-1,b,a,c)
+        hanoi(n-1,start,end,via)
+        move.append([start,end])
+        hanoi(n-1,via,start,end)
 
 move = []
-hanoi(3,1,2,3)
+hanoi(int( input() ),1,2,3)
 
 print(len(move))
 print("\n".join([' '.join(str(i) for i in row) for row in move]))
