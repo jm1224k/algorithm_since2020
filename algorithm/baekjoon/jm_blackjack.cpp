@@ -18,21 +18,14 @@ int main(void)
     ret = 0;
     for(int i = 0; i < n; i++)
     {
-        for(int j = 0; j < n; j++)
+        for(int j = i + 1; j < n; j++)
         {
-            if(i == j)
-                continue;
-
-            for(int k = 0; k < n; k++)
+            for(int k = j + 1; k < n; k++)
             {
-                if(j == k || i == k)
-                    continue;
-                
                 if(v[i] + v[j] + v[k] <= m && v[i] + v[j] + v[k] > ret)
                     ret = v[i] + v[j] + v[k];
             }
         }
     }
-
     cout << ret << endl;
 }
