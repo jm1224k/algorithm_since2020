@@ -23,7 +23,6 @@ for i,row in enumerate(triangle):
     for j, ele in enumerate(row):
         dp[i][j] = check_t(i,j)
 
-print(triangle)
 print(max(dp[-1]))
 
 
