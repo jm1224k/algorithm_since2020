@@ -23,4 +23,17 @@ for i,row in enumerate(triangle):
     for j, ele in enumerate(row):
         dp[i][j] = check_t(i,j)
 
+print(triangle)
 print(max(dp[-1]))
+
+
+# 역순으로 계산해 올라가기
+# from sys import stdin
+#
+# N = int(stdin.readline())
+# tri = [list(map(int, stdin.readline().split())) for _ in range(N)]
+#
+# for i in range(N-1, 0, -1):
+#     for j in range(i):
+#         tri[i-1][j] += max(tri[i][j], tri[i][j+1])
+# print(tri[0][0])
